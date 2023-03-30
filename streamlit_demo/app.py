@@ -20,7 +20,7 @@ st.title('Sales Dashboard')
 st.sidebar.header('Filter Options')
 
 # Freq slicer for first graph
-frequencies = ['hourly', 'daily', 'weekly', 'monthly']
+frequencies = ['hourly', 'daily', 'weekly']
 default_ix = frequencies.index('daily')
 selected_frequency = st.sidebar.selectbox('Select Frequency (First Graph)', frequencies, index=default_ix)
 
