@@ -1,0 +1,10 @@
+# Generally having dependencies in setup.py is preferred but using requirements.txt for simplicity
+# Also for streamlit deployment, it seems streamlit looks for requirements.txt from previous experience
+jupyter>=1.0.0
+jupyterlab
+jupytext
+pydantic
+plotly
+cufflinks
+chart-studio
+streamlit
