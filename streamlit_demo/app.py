@@ -1,14 +1,13 @@
 import os
 import pandas as pd
+
 import streamlit as st
-import plotly.graph_objects as go
 
 from streamlit_demo.graph_formatting import prepare_second_graph, prepare_first_graph
-from streamlit_demo.helpers import resample_data, initial_formatting
+from streamlit_demo.helpers import initial_formatting
 
 
 # Load data
-
 abs_path = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(abs_path, 'data/Sales_September_2019.csv')
 df = pd.read_csv(data_path)
