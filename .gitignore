@@ -132,3 +132,4 @@ dmypy.json
 
 # Other
 *.csv
+/streamlit_demo/other_local/

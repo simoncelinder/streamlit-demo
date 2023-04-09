@@ -224,6 +224,7 @@ print("Mean Squared Error (without standard scaling):", mse)
 # # 3) Make sure to choose a reasonable model for the data you are modelling
 # - Else might not capture relationships or extrapolate
 # - You might embarass yourself
+# - Use ChatGPT as a very cheap senior mentor that is always available (but stay critical of output)
 
 # +
 import numpy as np
@@ -341,8 +342,10 @@ fig.add_scatter(x=data['X'], y=data['y_train'], mode='markers', name='Training s
 fig.add_scatter(x=data['X'], y=data['y_test'], mode='markers', name='Test set', marker=dict(color='green'))
 fig.add_scatter(x=data['X'], y=data['y_pred'], mode='markers', name='Neural network', marker=dict(color='red'))
 
-fig.update_layout(title='Neural network fails to extrapolate(sigmoid activation)', xaxis_title='X', yaxis_title='y', width=800, height=600)
+fig.update_layout(title='Neural network fails to extrapolate (sigmoid activation)', xaxis_title='X', yaxis_title='y', width=800, height=600)
 fig.show()
 # -
+
+
 
 
