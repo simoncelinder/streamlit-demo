@@ -33,10 +33,15 @@ def resample_data(df, frequency, agg_dict):
 
 def initial_formatting(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
-    df.columns = [c.lower().replace(' ', '_') for c in df.columns]
-    df = df.dropna()
+
+    # TODO lowercase col names and replace spaces with underscores
+    #df.columns = [...]
+
     df['order_date'] = df['order_date'].apply(parse_date)
     df['quantity_ordered'] = pd.to_numeric(df['quantity_ordered'], errors='coerce')
     df['price_each'] = pd.to_numeric(df['price_each'], errors='coerce')
-    df = df.dropna()
+
+    # TODO drop all nulls
+    # df =
+
     return df

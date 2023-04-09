@@ -10,10 +10,13 @@ def prepare_first_graph(
     agg_dict: dict,
     selected_products: list
 ) -> go.Figure:
-    resampled_df = resample_data(df, selected_frequency, agg_dict)
+    # TODO: Complete the function call to resample_data(...) with the ready-made helper function
+    # resampled_df = resample_data(...)
+
     fig = go.Figure()
     for product in selected_products:
-        product_df = resampled_df[resampled_df['product'] == product]
+        # TODO complete the hidden part of the line below:
+        #product_df = resampled_df[resampled_df['product'] == <HIDDEN>]
         fig.add_trace(go.Scatter(x=product_df['order_date'], y=product_df['quantity_ordered'], mode='lines+markers', name=product))
 
     fig.update_layout(title=f'Sales Over Time (freq = {selected_frequency})', xaxis_title='Date', yaxis_title='Quantity Sold')
