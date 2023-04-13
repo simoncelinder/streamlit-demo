@@ -133,3 +133,4 @@ dmypy.json
 # Other
 *.csv
 /streamlit_demo/other_local/
+/streamlit_demo/.DS_Store
