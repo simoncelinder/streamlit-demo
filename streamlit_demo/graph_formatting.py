@@ -1,7 +1,7 @@
 import pandas as pd
 from plotly import graph_objects as go
 
-from streamlit_demo.helpers import resample_data
+from helpers import resample_data
 
 
 def prepare_first_graph(

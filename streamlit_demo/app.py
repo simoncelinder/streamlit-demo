@@ -3,8 +3,8 @@ import pandas as pd
 
 import streamlit as st
 
-from streamlit_demo.graph_formatting import prepare_second_graph, prepare_first_graph
-from streamlit_demo.helpers import initial_formatting
+from graph_formatting import prepare_second_graph, prepare_first_graph
+from helpers import initial_formatting
 
 
 # Load data
